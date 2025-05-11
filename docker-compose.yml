@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    build: ./   # This is to locate the dockerfile to create image
+    ports:
+      - '3216:3216'
+    volumes:
+      - ./:/app   # This is mappin the current working directory to the container app directory 
+  
